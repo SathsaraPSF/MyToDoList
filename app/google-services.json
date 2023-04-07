@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "882699470857",
+    "project_id": "my-to-do-list-a5fb9",
+    "storage_bucket": "my-to-do-list-a5fb9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882699470857:android:788aea02d15a5eb34d10d8",
+        "android_client_info": {
+          "package_name": "com.sathsata.myto_dolist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882699470857-tbqo0jm4h0egmteushl1tv3cu3mp8b9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI7YVnuMA2KXvZegx7O44oBJOv-mbN8Sg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882699470857-tbqo0jm4h0egmteushl1tv3cu3mp8b9n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
