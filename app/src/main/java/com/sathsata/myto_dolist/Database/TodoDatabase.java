@@ -148,31 +148,31 @@ public class TodoDatabase extends SQLiteOpenHelper {
     // Get all tasks from the personal todo table
     @SuppressLint("Range")
     public List<TodoModelPersonal> getAllPersonalTasks() {
-        List<TodoModelPersonal> taskListPersonal = new ArrayList<>(); // Create an empty list to store tasks
-        Cursor cur = null; // Initialize the cursor to null
-        db.beginTransaction(); // Begin a database transaction
+        List<TodoModelPersonal> taskListPersonal = new ArrayList<>();
+        Cursor cur = null;
+        db.beginTransaction();
         try {
             cur = db.query(TODO_TABLE_PERSONAL, null, null, null, null, null, null, null); // Execute the query to retrieve all rows from the personal to-do table
 
             if (cur != null) {
-                if (cur.moveToFirst()) { // Check if the cursor can move to the first row
+                if (cur.moveToFirst()) {
                     do {
-                        TodoModelPersonal task = new TodoModelPersonal(); // Create a new instance of TodoModelPersonal
-                        task.setId(cur.getInt(cur.getColumnIndex(ID))); // Set the ID property based on the value from the cursor
-                        task.setTask(cur.getString(cur.getColumnIndex(TASK))); // Set the task property based on the value from the cursor
-                        task.setStatus(cur.getInt(cur.getColumnIndex(STATUS))); // Set the status property based on the value from the cursor
-                        task.setDate(cur.getString(cur.getColumnIndex(DATE))); // Set the date property based on the value from the cursor
-                        task.setTime(cur.getString(cur.getColumnIndex(TIME))); // Set the time property based on the value from the cursor
-                        taskListPersonal.add(task); // Add the task to the list
-                    } while (cur.moveToNext()); // Move the cursor to the next row
+                        TodoModelPersonal task = new TodoModelPersonal();
+                        task.setId(cur.getInt(cur.getColumnIndex(ID)));
+                        task.setTask(cur.getString(cur.getColumnIndex(TASK)));
+                        task.setStatus(cur.getInt(cur.getColumnIndex(STATUS)));
+                        task.setDate(cur.getString(cur.getColumnIndex(DATE)));
+                        task.setTime(cur.getString(cur.getColumnIndex(TIME)));
+                        taskListPersonal.add(task);
+                    } while (cur.moveToNext());
                 }
             }
         } finally {
-            db.endTransaction(); // End the database transaction
-            assert cur != null; // Assert that the cursor is not null
-            cur.close(); // Close the cursor
+            db.endTransaction();
+            assert cur != null;
+            cur.close();
         }
-        return taskListPersonal; // Return the list of tasks
+        return taskListPersonal;
     }
 
     // Get all tasks from the travel todo table
