@@ -13,4 +13,12 @@
     <color name="major">#F3877E</color>
     <color name="major_2">#711E1E</color>
     <color name="major_3">#29AF1A</color>
+    <color name="major_4">#570404</color>
+    <color name="work">#082D5A</color>
+    <color name="family">#FF9800</color>
+    <color name="personal">#53328F</color>
+    <color name="travel">#C30545</color>
+    <color name="gray">#888</color>
+    <color name="blue">#0000FF</color>
+    <color name="light_blue">#A2B6F3</color>
 </resources>

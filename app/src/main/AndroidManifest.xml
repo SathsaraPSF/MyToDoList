@@ -1,60 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher_app_two_foreground"
+        android:icon="@drawable/my_to_do"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAHRaPrj3KyIuRTqzjtJH5RhE5Uu63hexs" />
+
         <activity
-            android:name=".PersoanlTodoActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".RateUsActivity"
+            android:name=".MapsActivity"
             android:exported="false"
-            android:theme="@style/Theme.MyToDoList">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:label="@string/title_activity_maps" />
         <activity
-            android:name=".WorkToDoActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".UserGuideActivity"
+            android:name=".UIs.ProfileActivity"
             android:exported="false"
-            android:theme="@style/Theme.MyToDoList">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppThemes_StatusBar" />
+        <activity
+            android:name=".UIs.LocationTrackActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppThemes_StatusBar" />
+        <activity
+            android:name=".UIs.NotificationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppThemes_StatusBar" />
+        <activity
+            android:name=".TodoUIs.FamilyTodoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.family" />
+        <activity
+            android:name=".TodoUIs.TravelTodoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.travel" />
+        <activity
+            android:name=".Authentication.ResetActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyToDoList" />
+        <activity
+            android:name=".Authentication.ForgetPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyToDoList" />
+        <activity
+            android:name=".Authentication.RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyToDoList" />
+        <activity
+            android:name=".TodoUIs.PersonalTodoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.personal" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".NavigationActivity"
-            android:exported="false">
+            android:name=".UIs.RateUsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.statusBar" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".SplashActivity"
+            android:name=".TodoUIs.WorkToDoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.work" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UIs.UserGuideActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MyToDoList" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UIs.NavigationActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UIs.SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.MyToDoList">
+            android:theme="@style/Theme.statusBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -66,13 +129,15 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Authentication.LoginActivity"
             android:exported="true"
-            android:theme="@style/Theme.MyToDoList">
+            android:theme="@style/Theme.MyToDoList" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <receiver android:name=".AlarmReceiver" />
     </application>
 
 </manifest>

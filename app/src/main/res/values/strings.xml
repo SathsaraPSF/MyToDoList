@@ -3,4 +3,24 @@
     <string name="sub_heading">Add your to-dos here to mange everything</string>
     <string name="welcome">Welcome</string>
     <string name="logo">logo</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="sign_in">Sign in</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_your_username">Enter your user name</string>
+    <string name="reset_your_password">Reset Your Password</string>
+    <string name="new_password">New password</string>
+    <string name="re_enter_your_password">Re enter your password</string>
+    <string name="travel_to_dos">Travel To-dos</string>
+    <string name="your_location">Your Location</string>
+    <string name="personal">Personal</string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="check_here">Check here</string>
+    <string name="enter_your_location">Enter your location</string>
+    <string name="family">Family</string>
 </resources>

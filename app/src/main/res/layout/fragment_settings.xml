@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottomNavigationUIs.Settings.SettingsFragment"
+    android:orientation="vertical"
+    android:weightSum="40"
+    android:background="@drawable/back_bg"
+     android:id="@+id/notification">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="User guide"
+            android:textAllCaps="false"
+            android:paddingStart="10dp"
+            android:background="@drawable/buttons_settings"
+            android:drawableLeft="@drawable/ic_baseline_description_24"
+            android:textSize="20sp"
+
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/shareApp"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="Share app"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/share"
+            android:paddingStart="10dp"
+            android:background="@drawable/buttons_settings"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/feedback"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="Feedback"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/feedback"
+            android:paddingStart="10dp"
+            android:background="@drawable/buttons_settings"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/rateUs"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="Rate Us"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_baseline_star_24"
+            android:paddingStart="10dp"
+            android:background="@drawable/buttons_settings"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/checkLocation"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="Your Location"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/location"
+            android:paddingStart="10dp"
+            android:background="@drawable/buttons_settings"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:text="Profile"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/profile"
+            android:paddingStart="10dp"
+            android:background="@drawable/buttons_settings"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

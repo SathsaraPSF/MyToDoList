@@ -26,4 +26,16 @@
         <item name="android:windowSoftInputMode">adjustResize</item>
     </style>
 
+    <style name="FontWithStroke">
+        <item name="android:textAppearance">@style/TextAppearanceWithStroke</item>
+    </style>
+
+    <style name="TextAppearanceWithStroke">
+        <item name="android:textColor">@color/white</item> <!-- Define your desired text color -->
+        <item name="android:textSize">16sp</item> <!-- Define your desired text size -->
+        <item name="android:textStyle">bold</item> <!-- Define your desired text style -->
+        <item name="android:shadowColor">@color/major_4</item> <!-- Define your desired stroke color -->
+        <item name="android:shadowRadius">10</item> <!-- Define your desired stroke width -->
+    </style>
+
 </resources>

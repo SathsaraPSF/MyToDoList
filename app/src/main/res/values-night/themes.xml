@@ -1,16 +1,61 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MyToDoList" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.MyToDoList" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-<!--        <item name="colorPrimary">@color/purple_200</item>-->
-<!--        <item name="colorPrimaryVariant">@color/purple_700</item>-->
-<!--        <item name="colorOnPrimary">@color/black</item>-->
-<!--        &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
-<!--        <item name="colorSecondary">@color/teal_200</item>-->
-<!--        <item name="colorSecondaryVariant">@color/teal_200</item>-->
-<!--        <item name="colorOnSecondary">@color/black</item>-->
+        <item name="colorPrimary">@color/major_2</item>
+        <item name="colorPrimaryVariant">@color/major_2</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/major_2</item>
+        <item name="colorSecondaryVariant">@color/major_2</item>
+        <item name="colorOnSecondary">@color/black</item>
+
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/major</item>
-        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.work" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/work</item>
+        <item name="colorOnSecondary">@color/white</item>
+                <item name="colorPrimary">@color/work</item>
+                <item name="colorPrimaryVariant">@color/work</item>
+                <item name="colorOnPrimary">@color/work</item>
+                <!-- Secondary brand color. -->
+                <item name="colorSecondary">@color/work</item>
+                <item name="colorSecondaryVariant">@color/work</item>
+
+    </style>
+
+    <style name="Theme.family" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/family</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorPrimary">@color/family</item>
+        <item name="colorPrimaryVariant">@color/family</item>
+        <item name="colorOnPrimary">@color/family</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/family</item>
+        <item name="colorSecondaryVariant">@color/family</item>
+    </style>
+
+    <style name="Theme.travel" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/travel</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorPrimary">@color/travel</item>
+        <item name="colorPrimaryVariant">@color/travel</item>
+        <item name="colorOnPrimary">@color/travel</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/travel</item>
+        <item name="colorSecondaryVariant">@color/travel</item>
+    </style>
+
+    <style name="Theme.personal" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/personal</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorPrimary">@color/personal</item>
+        <item name="colorPrimaryVariant">@color/personal</item>
+        <item name="colorOnPrimary">@color/personal</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/personal</item>
+        <item name="colorSecondaryVariant">@color/personal</item>
     </style>
 </resources>
